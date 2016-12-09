@@ -33,9 +33,29 @@ describe Karatsuba do
         to eql(152415787501905210)
     end
 
-    it 'computes the product of two huge numbers' do
+    it 'computes the product of two bigger numbers' do
       expect(Karatsuba.multiply(1234567891234567890, 123456789123456789)).
         to eql(152415787806736785156226207501905210)
     end
   end
+
+  # describe '.special_multiply' do
+  #   it 'computes the product of 2 and 3' do
+  #     expect(Karatsuba.special_multiply(2, 3)).to eql(6)
+  #   end
+
+  #   it 'computes the product of two 4-digit numbers' do
+  #     expect(Karatsuba.special_multiply(1234, 5678)).to eql(7006652)
+  #   end
+
+  #   it 'computes the product of two 8-digit numbers' do
+  #     expect(Karatsuba.special_multiply(12345678, 23456789)).
+  #       to eql(289589963907942)
+  #   end
+
+  #   it 'computes the product of a 9 and 10-digit number' do
+  #     expect(Karatsuba.special_multiply(1234567890,123456789)).
+  #       to eql(152415787501905210)
+  #   end
+  # end
 end
